@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: "Oswald", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a1a
+        }
+        .responsive-div{
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            background-color: #723574;
+        }
+        @media (max-width: 600px) {
+            body{
+                align-items: flex-start;
+            }
+            .responsive-div {
+               background-color: #3498db;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 1024px) {
+            body{
+                align-items: center;
+            }
+            .responsive-div {
+               background-color: #db343c;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive-div">
+        This is a responsive div. Resize the window to see the effect.
+    </div>
+</body>
+</html>

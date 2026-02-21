@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body,html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Oswald", sans-serif;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: linear-gradient(135deg,#0f0d10,#5a5f70);
+    }
+    .content {
+        text-align: center;
+        color: white;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        height: 450px;
+        width: 300px;
+        max-height: 550px;
+    }
+    img {
+        width: 80%;
+        height: 200px;
+        object-fit: contain;
+    }
+    .forText {
+        margin-bottom: 80px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    h2,h3 {
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap
+    }
+    button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.5s ease-in-out;
+    box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.5);
+    }
+    button:hover {
+        background-color: #615f5f;
+    }
+    .forButtons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="../card_1/image.jpg" alt="Image">
+            <div class="forText">
+                <h2>New deal on your shoes</h2>
+                <h3>Coming soon!</h3>
+            </div>
+            <div class="forButtons">
+                <button id="notifyMe">Notify Me</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
