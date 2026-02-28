@@ -61,3 +61,15 @@ document.getElementById("feedbackForm").addEventListener('submit',function (even
     
     document.getElementById("feedbackDisplay").textContent = feedBack;
 })
+
+//example-9
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('domStatus').textContent ="Dom fully loaded"
+})
+
+//example-10
+document.getElementById('toggleHighlight').addEventListener('click',function () {
+    let descriptionText = document.getElementById("descriptionText");
+    descriptionText.classList.toggle("highlight");
+})
