@@ -1,0 +1,12 @@
+function* nextGenerator() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+
+const gen = nextGenerator();
+
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
